@@ -1,0 +1,6 @@
+{
+  "name": "Vera — Tax & Accounting Client Companion",
+  "description": "Compliance-aware client companion for tax preparation and accounting firms with real practice-management actions, document checklists, and calendar booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

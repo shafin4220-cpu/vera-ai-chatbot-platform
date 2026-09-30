@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --vera-violet: #5B3E8E;
+    --vera-violet-hover: #4C3278;
+    --vera-violet-light: #7353A8;
+    --vera-violet-surface: #F3EEF9;
+    --ledger-gold: #C9982F;
+    --ledger-gold-hover: #B48523;
+    --ledger-gold-surface: #FDF9F0;
+    --soft-lavender: #F7F5FA;
+    --charcoal-plum: #2E2438;
+    --charcoal-plum-muted: #6E637B;
+    --status-green: #4E9C86;
+    --status-green-surface: #EEF8F5;
+    --deadline-red: #D64545;
+    --deadline-red-surface: #FDF2F2;
+    --border-subtle: #E8E2EE;
+    --card-surface: #FFFFFF;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--soft-lavender);
+    color: var(--charcoal-plum);
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Lora', Georgia, Cambria, 'Times New Roman', Times, serif;
+  }
+}
+
+/* Custom utility styles conforming to Amethyst Ledger */
+.vera-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E2EE;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(46, 36, 56, 0.04), 0 1px 2px rgba(46, 36, 56, 0.02);
+}
+
+.vera-card-hover {
+  transition: all 0.2s ease-in-out;
+}
+.vera-card-hover:hover {
+  box-shadow: 0 6px 16px -2px rgba(91, 62, 142, 0.08);
+  border-color: #D3C9DF;
+}
+
+/* Custom scrollbar for clean professional appearance */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D3C9DF;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5B3E8E;
+}
